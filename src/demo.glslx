@@ -1,0 +1,25 @@
+/* Main function, uniforms & utils */
+precision mediump float;
+
+#include "./common/constants.glslx"
+#include "./common/easing.glslx"
+#include "./common/interface.glslx"
+#include "./common/object.glslx"
+
+#include "./sdf/sdf.glslx"
+#include "./sdf/sdf2d.glslx"
+#include "./sdf/blending.glslx"
+
+#include "./utils/animation.glslx"
+#include "./utils/coords.glslx"
+#include "./utils/math.glslx"
+
+void main() {
+    vec3 color = vec3(
+        abs(cos(st.x + mx.x)),
+        abs(sin(st.y + mx.y)),
+        abs(sin(u_Time))
+    );
+    
+    gl_FragColor = vec4(color, 1.0);
+}

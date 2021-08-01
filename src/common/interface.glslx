@@ -1,0 +1,27 @@
+attribute vec4 a_Position;
+attribute vec4 a_Color;
+
+// Viewport size (width,height)
+uniform vec2 u_Resolution;
+
+// mouse position in screen pixels
+uniform vec2 u_Mouse;
+
+// Time in seconds since load
+uniform float u_Time;
+
+uniform mat4 u_ViewProjMatrix;
+
+uniform mat4 u_ViewMatrix;
+
+// uniform vec3 u_LightPosition;
+
+// uniform float u_LumaThreshold;
+
+// uniform float u_ChromaThreshold;
+
+// uniform sampler2D u_SamplerY;
+
+// uniform sampler2D u_SamplerUV;
+
+// uniform mat3 u_ColorConversionMatrix;
