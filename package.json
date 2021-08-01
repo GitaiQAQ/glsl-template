@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "esbuild": "^0.12.17",
     "glsl-transpiler": "^1.8.5",
+    "glslCanvas": "^0.1.7",
     "glslx": "^0.2.13"
   }
 }

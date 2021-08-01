@@ -2,17 +2,17 @@
 
 /* Coordinate and unit utils */
 vec2 coord(in vec2 p) {
-    p = p / u_Resolution.xy;
+    p = p / u_resolution.xy;
     // correct aspect ratio
-    if (u_Resolution.x > u_Resolution.y)
+    if (u_resolution.x > u_resolution.y)
     {
-        p.x *= u_Resolution.x / u_Resolution.y;
-        p.x += (u_Resolution.y - u_Resolution.x) / u_Resolution.y / 2.0;
+        p.x *= u_resolution.x / u_resolution.y;
+        p.x += (u_resolution.y - u_resolution.x) / u_resolution.y / 2.0;
     }
     else
     {
-        p.y *= u_Resolution.y / u_Resolution.x;
-        p.y += (u_Resolution.x - u_Resolution.y) / u_Resolution.x / 2.0;
+        p.y *= u_resolution.y / u_resolution.x;
+        p.y += (u_resolution.x - u_resolution.y) / u_resolution.x / 2.0;
     }
     // centering
     p -= 0.5;
@@ -20,11 +20,11 @@ vec2 coord(in vec2 p) {
     return p;
 }
 
-float rx = 1.0 / min(u_Resolution.x, u_Resolution.y);
-vec2 uv = gl_FragCoord.xy / u_Resolution.xy;
-vec2 uv_square = (2.0 * gl_FragCoord.xy - u_Resolution.xy) / min(u_Resolution.y, u_Resolution.x);
+float rx = 1.0 / min(u_resolution.x, u_resolution.y);
+vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+vec2 uv_square = (2.0 * gl_FragCoord.xy - u_resolution.xy) / min(u_resolution.y, u_resolution.x);
 vec2 st = coord(gl_FragCoord.xy);
-vec2 mx = coord(u_Mouse);
+vec2 mx = coord(u_mouse);
 
 /* Pixel unit conversion function */
 vec2 pos(in float x, in float y) {

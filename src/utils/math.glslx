@@ -22,8 +22,8 @@ mat4 scale = mat4(
 
 mat4 rotation = mat4(
     vec4(1.0, 0.0, 0.0, 0.0),
-    vec4(0.0, cos(u_Time), sin(u_Time), 0.0),
-    vec4(0.0, -sin(u_Time), cos(u_Time), 0.0),
+    vec4(0.0, cos(u_time), sin(u_time), 0.0),
+    vec4(0.0, -sin(u_time), cos(u_time), 0.0),
     vec4(0.0, 0.0, 0.0, 1.0)
 );
 

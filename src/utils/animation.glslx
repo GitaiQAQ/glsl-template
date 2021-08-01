@@ -9,7 +9,7 @@ struct Animation {
 Animation animation = Animation(0., 0.);
 
 void totalTime(in float t, in float offset) {
-    animation.time = mod(u_Time + offset, t);
+    animation.time = mod(u_time + offset, t);
 }
 
 void totalTime(in float t) {

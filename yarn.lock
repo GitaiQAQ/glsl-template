@@ -17,6 +17,16 @@ core-util-is@~1.0.0:
   resolved "https://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+dom-walk@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.nlark.com/dom-walk/download/dom-walk-0.1.2.tgz#0c548bef048f4d1f2a97249002236060daa3fd84"
+  integrity sha1-DFSL7wSPTR8qlySQAiNgYNqj/YQ=
+
+esbuild@^0.12.17:
+  version "0.12.17"
+  resolved "https://registry.nlark.com/esbuild/download/esbuild-0.12.17.tgz?cache=0&sync_timestamp=1627578457708&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fesbuild%2Fdownload%2Fesbuild-0.12.17.tgz#5816f905c2905de0ebbc658860df7b5b48afbcd3"
+  integrity sha1-WBb5BcKQXeDrvGWIYN97W0ivvNM=
+
 escaper@^2.5.3:
   version "2.5.3"
   resolved "https://registry.nlark.com/escaper/download/escaper-2.5.3.tgz#8b8fe90ba364054151ab7eff18b4ce43b1e13ab5"
@@ -33,6 +43,14 @@ float-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.nlark.com/float-regex/download/float-regex-1.0.0.tgz#f80fa91d672c6b924842034bd87a0dd72069d2ef"
   integrity sha1-+A+pHWcsa5JIQgNL2HoN1yBp0u8=
+
+global@~4.4.0:
+  version "4.4.0"
+  resolved "https://registry.nlark.com/global/download/global-4.4.0.tgz#3e7b105179006a323ed71aafca3e9c57a5cc6406"
+  integrity sha1-PnsQUXkAajI+1xqvyj6cV6XMZAY=
+  dependencies:
+    min-document "^2.19.0"
+    process "^0.11.10"
 
 glsl-parser@^2.0.1:
   version "2.0.1"
@@ -64,10 +82,12 @@ glsl-transpiler@^1.8.5:
     prepr "^1.1.2"
     xtend "^4.0.1"
 
-glsl-unit@0.0.7:
-  version "0.0.7"
-  resolved "https://registry.nlark.com/glsl-unit/download/glsl-unit-0.0.7.tgz#ca9fdf78ecad2b58282bad603ab4df26c66f3321"
-  integrity sha1-yp/feOytK1goK61gOrTfJsZvMyE=
+glslCanvas@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.nlark.com/glslCanvas/download/glslCanvas-0.1.7.tgz#a56e64d196f23302aa18ee5dd90ada54f0afbb19"
+  integrity sha1-pW5k0ZbyMwKqGO5d2QraVPCvuxk=
+  dependencies:
+    xhr "^2.5.0"
 
 glslx@^0.2.13:
   version "0.2.13"
@@ -79,6 +99,11 @@ inherits@^2.0.1, inherits@~2.0.1:
   resolved "https://registry.npm.taobao.org/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
 
+is-function@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.nlark.com/is-function/download/is-function-1.0.2.tgz#4f097f30abf6efadac9833b17ca5dc03f8144e08"
+  integrity sha1-Twl/MKv2762smDOxfKXcA/gUTgg=
+
 isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.nlark.com/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
@@ -89,6 +114,13 @@ jsep@^0.3.0:
   resolved "https://registry.nlark.com/jsep/download/jsep-0.3.5.tgz#3fd79ebd92f6f434e4857d5272aaeef7d948264d"
   integrity sha1-P9eevZL29DTkhX1Scqru99lIJk0=
 
+min-document@^2.19.0:
+  version "2.19.0"
+  resolved "https://registry.npm.taobao.org/min-document/download/min-document-2.19.0.tgz#7bd282e3f5842ed295bb748cdd9f1ffa2c824685"
+  integrity sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
+  dependencies:
+    dom-walk "^0.1.0"
+
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.nlark.com/object-assign/download/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -98,6 +130,11 @@ parenthesis@^3.0.0:
   version "3.1.7"
   resolved "https://registry.nlark.com/parenthesis/download/parenthesis-3.1.7.tgz#01c89b603a2a6a262ec47554e74ed154a9be2aa6"
   integrity sha1-AcibYDoqaiYuxHVU507RVKm+KqY=
+
+parse-headers@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.nlark.com/parse-headers/download/parse-headers-2.0.3.tgz#5e8e7512383d140ba02f0c7aa9f49b4399c92515"
+  integrity sha1-Xo51Ejg9FAugLwx6qfSbQ5nJJRU=
 
 pick-by-alias@^1.2.0:
   version "1.2.0"
@@ -115,6 +152,11 @@ prepr@^1.1.2:
     object-assign "^4.1.1"
     parenthesis "^3.0.0"
     strip-json-comments "^2.0.1"
+
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.nlark.com/process/download/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
 "readable-stream@>=1.0.33-1 <1.1.0-0":
   version "1.0.34"
@@ -149,7 +191,17 @@ through@2.3.4:
   resolved "https://registry.nlark.com/through/download/through-2.3.4.tgz#495e40e8d8a8eaebc7c275ea88c2b8fc14c56455"
   integrity sha1-SV5A6Nio6uvHwnXqiMK4/BTFZFU=
 
-"xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.1:
+xhr@^2.5.0:
+  version "2.6.0"
+  resolved "https://registry.nlark.com/xhr/download/xhr-2.6.0.tgz#b69d4395e792b4173d6b7df077f0fc5e4e2b249d"
+  integrity sha1-tp1DleeStBc9a33wd/D8Xk4rJJ0=
+  dependencies:
+    global "~4.4.0"
+    is-function "^1.0.1"
+    parse-headers "^2.0.0"
+    xtend "^4.0.0"
+
+"xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0, xtend@^4.0.1:
   version "4.0.2"
   resolved "https://registry.nlark.com/xtend/download/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
